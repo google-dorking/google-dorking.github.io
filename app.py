@@ -1,7 +1,7 @@
 from Flask import Flask, render_template, request
 import requests
 
-app = Flask(__name__)
+app = Flask(__name__, static_url_path='/public', static_folder='public')
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
