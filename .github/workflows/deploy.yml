@@ -27,7 +27,7 @@ jobs:
           python app.py &
           sleep 5 # wait for Flask to start
           pyppeteer-install # in case Chromium is required
-          wget http://localhost:5000 -O index.html
+          wget https://google-dorking.github.io/templates/index.html -O index.html
           mkdir public
           mv index.html public/
       
